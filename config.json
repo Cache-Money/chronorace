@@ -1,0 +1,16 @@
+{
+  "proxy": "http://127.0.0.1:8080",
+  "verify_ssl": false,
+  "requests": [
+    {
+      "file": "http_requests/example/get.txt",
+      "delay": 0,
+      "replacements": []
+    },
+    {
+      "file": "http_requests/example/post.txt",
+      "delay": 500,
+      "replacements": [["[REPLACE]", "bar"]]
+    }
+  ]
+}
